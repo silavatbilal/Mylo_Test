@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bree+Serif&family=PT+Sans+Caption&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}   
+
+.wrapper{
+    width: 40vw;
+    margin: 1rem auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshowContainer {
+  position: relative;
+  background-image: linear-gradient(120deg, #a1c4fd8a 0%, #c2e9fb 100%);
+  box-shadow: 1px 2px 7px 1px #00000036;
+  max-height: 300px;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 14px;
+}
+
+.mainContent{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+/* dots and bullets */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color:#38a5ca;
+  }
+
+.icon{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+.icon .fa{
+    font-size: 30px;
+    margin: 25%;
+    color:#166475;
+}
+
+.orderIdDetail p {
+    color: #6e6e6e;
+}
+
+.orderDetails p{
+    font-size: 22px;
+    font-weight: bold;
+    color:#3c3c3c;
+    padding: 16px;
+}
+.orderDate p{
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+    color:#5353539e;
+}
+
+.trackButton button{
+    padding: 8px 6px;
+    border:1px solid rgb(182, 44, 44);
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(182, 44, 44);
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+
+}
+
+.trackOrderBox{
+    width: 100%;
+    background:#fff;
+}
+
+.trackOrderBox .orderIdDetail{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 14px;
+}
+
+.trackDetails{
+    display: flex;
+}
+.trackDetails img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 2px;
+    margin-top: 6px;
+}
+.productName p{
+    font-size: 20px;
+    padding: 20px 16px;
+    color: #6e6e6e;
+}
+.productName span{
+    font-size: 14px;
+    padding: 20px 16px;
+    color: #6e6e6e;;
+    
+}
+
+/* Order Track */
+
+.order-track {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .order-track-step {
+    display: flex;
+    height: 4rem;
+  }
+  .order-track-step:last-child {
+    overflow: hidden;
+    height: 4rem;
+  }
+  .order-track-step:last-child .order-track-status span:last-of-type {
+    display: none;
+  }
+  .order-track-status {
+    margin-right: 1.5rem;
+    position: relative;
+  }
+  .order-track-status-dot {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: #26b6af;
+    text-align: center;
+  }
+
+  .order-track-status-dot .fa{
+      color: #fff;
+      margin: 5px;
+
+  }
+
+  .last-dot{
+      background: rgba(27, 27, 27, 0.219);
+  }
+  .last-line{
+      background:rgba(27, 27, 27, 0.219) !important;
+  }
+  .last-text{
+    color:rgba(27, 27, 27, 0.356) !important;
+    
+  }
+  
+  .order-track-status-line {
+    display: block;
+    margin: 0 auto;
+    width: 2px;
+    height: 2rem;
+    background:  #26b6af;
+  }
+  .order-track-text{
+    color: #26b6af;
+  }
+  .order-track-text-stat {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .order-track-text-sub {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .order-track {
+    transition: all .3s height 0.3s;
+    transform-origin: top center;
+  }
+
+  .cancelOrderButton{
+      text-align: center;
+      border-bottom: 1px solid rgba(0,0,0,.125);
+      border-top: 1px solid rgba(0,0,0,.125);
+      padding: 6px;
+  }
+  .cancelOrderButton button{
+      padding: 6px 10px;
+      background: transparent;
+      border:none;
+      cursor: pointer;
+      font-family: 'Bree Serif', serif;
+      color: #6e6e6e;
+      font-size: 16px;
+  }
+
+  .helpDesk{
+    background-image: linear-gradient(120deg, #a1c4fd8a 0%, #c2e9fb 100%);
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      position: relative;
+  }
+  .helpDeskDetail h5{
+      font-size: 20px;
+  }
+
+  .helpDeskDetail p{
+      color: #6e6e6e;
+      font-size: 14px;
+  }
+
+  .helpdeskSlider{
+      padding: 1rem;
+  }
+  
+  .helpdeskSlider img{
+      /* width: 25%; */
+      float: left;
+  }
+  .helpdeskSlider .helpDeskDetail{
+      padding: 2rem 1rem;
+  }
+  .helpDeskmySlides {display:none;} 
+
+   .left-button{
+    width: 24px;
+    height: 28px;
+    position:absolute;
+    top: 50%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  .right-button{
+      width: 24px;
+      height: 28px;
+      position:absolute;
+      top: 50%;
+      right: 0;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+   
+  }
+
+  /* Help Desk over here */
+
+  /* Delivering to */
+
+  #deliveringTo{
+    margin-top: 1.5rem;
+    
+  }
+
+  #deliveringTo h2{
+      color: #6e6e6e;
+  }
+
+  #ItemsInOrder{
+    margin-top: 1.5rem; 
+    
+  }
+  #ItemsInOrder h2{
+    margin-bottom: 1.5rem;
+    color: #6e6e6e;
+  }
+
+  #priceDetailsHead{
+      margin-top: 1rem;
+  }
+
+  #priceDetailsHead h2{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+  .deliveryPersonAddress{
+      width: 100%;
+      background: #fff;
+      padding: 18px 10px;
+      margin-top: 1rem;
+      line-height: 32px;
+  }
+  .deliveryPersonAddress p{
+      font-size: 18px;
+      color: #26b6af;
+  }
+  address{
+      color: #6e6e6e;
+      font-size: 14px;
+  }
+
+  /* Delivering to ends here */
+
+  .itemList{
+      width: 100%;
+      background: #fff;
+      padding: 8px 10px;
+      display: flex;
+      border-bottom: 1px solid rgba(0,0,0,.125);
+     
+  }
+
+  .itemList img{
+    width: 20%;
+    box-shadow: 0px 0px 5px #bebebe;
+    margin-right: 1rem;
+    border-radius: 8px;
+  }
+
+  .itemDetail{
+      padding: 18px 6px;
+      line-height: 30px;
+      color: #6e6e6e;
+     
+  }
+
+  /* Items in List ends here */
+    
+  .priceDetail{
+      width: 100%;
+      padding: 8px 10px;
+      background: #fff;
+      color: #6e6e6e;
+      margin-bottom: 6rem;
+  }
+
+  #priceDetailsHead h2{
+      color: #6e6e6e;
+  }
+  .item,.offer,.deliverChargeDiv,.totalPayable{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      padding: 12px 8px;
+  }
+
+  .itemListName p,.offerDiscount p,.deliveryCharge p{
+      font-size: 18px;
+  }
+  .offerDiscount span{
+      font-size: 12px;
+      color: #26b6af;
+  }
+  
+  .amount p,.totalAmount p{
+      float: right;
+      margin-right: 1rem;
+  }
+
+  .totalPayable{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-top: 1px solid rgba(0,0,0,.125);
+  }
+
+  .modeOfPayment{
+      padding: 8px 10px;
+      text-align: right;
+  }
+  .modeOfPayment span{
+      color: red;
+  }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    
+    .wrapper{
+        width: 60vw;
+        margin: 1rem auto;
+    }
+    .itemList img {
+        width: 90px;
+        height: 91px;
+        margin-top: 1rem;
+    }
+    .productName span {
+        font-size: 12px;
+        padding: 20px 12px;
+    }
+    
+}
+
+@media only screen and (max-width:520px){
+
+    .wrapper{
+        width: 90vw;
+        margin: 1rem auto;
+    }
+
+    .itemDetail span{
+        font-size: 12px;
+    }
+
+    .helpDeskDetail p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:364px){
+    .wrapper{
+        width: 90vw;
+        margin: 1rem auto;
+    }
+
+    .helpdeskSlider img {
+        width: 40%;
+    }
+    .productName p {
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .itemDetail span{
+        font-size: 12px;
+    }
+
+    .productName span {
+        font-size: 11px;
+        padding: 20px 0px;
+    }
+    .helpDeskDetail p {
+        font-size: 10px;
+    }
+    .modeOfPayment {
+        padding: 8px 4px;
+        text-align: left;
+    }
+}
